@@ -31,8 +31,8 @@ public class LevelCompletePanel : ShowHidable
         _toastTxt.text = _toasts.GetRandom();
         _toastTxt.gameObject.SetActive(true);
 
-        AdsManager.ShowOrPassAdsIfCan();
-        ShowInterstitialAd("1lcaf5895d5l1293dc",
+        //AdsManager.ShowOrPassAdsIfCan();
+        ShowInterstitialAd("aa65l9gn964afmm8pq",
             () => {
                 Debug.LogError("--插屏广告完成--");
 

@@ -51,7 +51,7 @@ public class GamePlayPanel : ShowHidable
 
     public void OnClickSkip()
     {
-        ShowVideoAd("192if3b93qo6991ed0",
+        ShowVideoAd("3a7vb38rvttiihk3e2",
             (bol) => {
                 if (bol)
                 {
@@ -155,20 +155,5 @@ public class GamePlayPanel : ShowHidable
         }
     }
 
-    /// <summary>
-    /// 播放插屏广告
-    /// </summary>
-    /// <param name="adId"></param>
-    /// <param name="errorCallBack"></param>
-    /// <param name="closeCallBack"></param>
-    public void ShowInterstitialAd(string adId, System.Action closeCallBack, System.Action<int, string> errorCallBack)
-    {
-        starkAdManager = StarkSDK.API.GetStarkAdManager();
-        if (starkAdManager != null)
-        {
-            var mInterstitialAd = starkAdManager.CreateInterstitialAd(adId, errorCallBack, closeCallBack);
-            mInterstitialAd.Load();
-            mInterstitialAd.Show();
-        }
-    }
+    
 }
